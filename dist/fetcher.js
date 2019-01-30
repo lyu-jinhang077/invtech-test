@@ -3,8 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const weather_1 = __importDefault(require("./weather"));
 const time_1 = __importDefault(require("./time"));
+const weather_1 = __importDefault(require("./weather"));
 class Fetcher {
     constructor(loc) {
         this.loc = loc;
@@ -12,10 +12,12 @@ class Fetcher {
     fetch(onFinish) {
         const numReg = /\d+/;
         let type;
-        if (numReg.test(this.loc))
+        if (numReg.test(this.loc)) {
             type = "zip";
-        else
+        }
+        else {
             type = "name";
+        }
         new weather_1.default(this.loc, type).get((res) => {
             if (res && res.cod === 200) {
                 console.log(`\n\n-----------\nLocation: ${res.name}\nWeather: ${res.weather[0].description}`);
@@ -24,7 +26,7 @@ class Fetcher {
                         console.log(`Time: ${res2.formatted}`);
                     }
                     else {
-                        console.log('Time: failed to fetch');
+                        console.log("Time: failed to fetch");
                     }
                     onFinish();
                 });

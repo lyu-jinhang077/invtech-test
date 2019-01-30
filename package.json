@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc & npm run lint",
     "start": "tsc & node dist/index.js",
+    "lint": "tslint -c tslint.json 'src/*.ts'",
     "sample": "tsc & node dist/index.js 10020;shanghai;london;3004"
   },
   "repository": {
