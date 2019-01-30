@@ -1,0 +1,32 @@
+{
+  "name": "invtech-test",
+  "version": "1.0.0",
+  "description": "Get time and weather from given array of location names and postal codes",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc & npm run lint",
+    "start": "tsc & node dist/index.js",
+    "sample": "tsc & node dist/index.js 10020;shanghai;london;3004"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TruePai/invtech-test.git"
+  },
+  "keywords": [
+    "time",
+    "api",
+    "weather",
+    "api",
+    "node.js"
+  ],
+  "author": "Lyu Jinhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TruePai/invtech-test/issues"
+  },
+  "homepage": "https://github.com/TruePai/invtech-test#readme",
+  "dependencies": {
+    "@types/node": "^10.12.19",
+    "request": "^2.88.0"
+  }
+}
