@@ -6,7 +6,7 @@ NodeJS, Typescript
 npm i -g typescript@latest
 npm i -g tslint@latest
 ```
-##Installation
+## Installation
 ```
 npm i --save
 ```
