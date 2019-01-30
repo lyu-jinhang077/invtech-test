@@ -6,7 +6,7 @@ npm run build
 ```
 ## Run
 ```
-npm run start &lt;locations splitted by semicolon(;)&gt;
+npm run start [locations splitted by semicolon(;)]
 ```
 example
 ```
