@@ -27,3 +27,5 @@ npm run start 10020;london;shanghai
 npm run sample
 ```
 
+### The API keys become invalid since 4th of Feb, 2019
+
